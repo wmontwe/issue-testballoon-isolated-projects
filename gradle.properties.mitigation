@@ -1,0 +1,20 @@
+# Short-term mitigation for TestBalloon parent-project property lookup under Gradle isolated projects.
+#
+# Append these values to gradle.properties to avoid TestBalloon falling back to parent-project
+# property lookup while configuration cache is stored.
+
+testBalloon.androidHostSideTestClassRegex=^com\\.android\\.build\\.gradle\\.tasks\\.factory\\.AndroidUnitTest$
+testBalloon.browserTestTaskRegex=BrowserTest$
+testBalloon.junit4AutoIntegrationEnabled=true
+testBalloon.junit4GradleAutoConfigurationEnabled=true
+testBalloon.junitPlatformGradleAutoConfigurationEnabled=true
+testBalloon.junitPlatformLauncherDependentConfigurationRegex=^(test|jvmTest)RuntimeOnly$
+testBalloon.jvmTestBalloonTestsOnly=false
+testBalloon.jvmTestFilteringPatchEnabled=true
+testBalloon.notIncrementallyCompilableTestSourceSetsRegex=^---NONE---$
+testBalloon.reportingMode=auto
+testBalloon.reportingPathLimit=
+testBalloon.reportsEnabled=auto
+testBalloon.simulatorSafeEnvironmentPattern=^(CI|TEST.*)$
+testBalloon.testSourceSetsRegex=[tT]est(?!Fixtures)
+testBalloon.testsOnlyProjectPlugins=com.android.test
