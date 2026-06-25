@@ -1,5 +1,10 @@
 # TestBalloon Isolated Projects Reproducer
 
+> [!NOTE] 
+> This has been an issue with Gradle 9.5.1 and is fixed with 9.6.0
+>
+> I keep this repository for context.
+
 This repo is a small reproducer for a [TestBalloon](https://github.com/infix-de/testBalloon/) issue with [Gradle Isolated Projects](https://docs.gradle.org/current/userguide/isolated_projects.html).
 
 ### What breaks
